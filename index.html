@@ -1,6 +1,90 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <meta name="google-site-verification" content="0_POzNpAyg1Ite4Eb98pW4mu0dzksVUW9k2G9OIdr-s" />
+	<title>HTML Test</title>
+	<link rel="stylesheet" type="text/css" href="/css/unsemantic-grid-responsive-tablet.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+	<style type="text/css">
+		html, body {
+			margin: 0;
+			height: 100%;
+			font-family: 'Roboto', sans-serif;
+			overflow: hidden;
+		}
+
+		.background-gif {
+			display: block;
+			z-index:10;
+			opacity: 0.65;
+		    position: absolute;
+		    top: -9999px;
+		    bottom: -9999px;
+		    left: -9999px;
+		    right: -9999px;
+		    margin: auto;
+			min-width: 100%;
+			min-height: 100%;
+		}
+
+		.foreground-gif {
+			width: 100%;
+			position: absolute;
+			display: block;
+			z-index: 20;
+			text-align: center;
+		}
+
+		.container {
+			overflow: hidden;
+		}
+
+		.grid-container {
+			position: relative;
+		}
+
+		h1 {
+			color: #006699;
+			text-align: center;
+			font-size: 4rem;
+		}
+
+		button {
+			color: #cc9900;
+			font-weight: 600;
+			font-size: 1rem;
+			padding: 8px 8px;
+			border-radius: 5px;
+			border: 2px solid #cc9900;
+			background-color: Transparent;
+ 			box-shadow: none;
+		}
+
+		button:hover {
+			color: #006699;
+			border: 2px solid #006699;
+			/*background-color: white;*/
+		}
+
+		button:focus {
+			outline: 0;
+		}
+
+		button:active {
+/*			background-color: white;
+*/		}
+
+	</style>
 </head>
 <body>
-  <h1>Hello</h1>
+	<div class="parent">
+		<div class="child">
+			<img class="background-gif"
+				src="/bear.gif" />
+			<div class="foreground-gif">
+				<h1>Hello There</h1>
+				<button onclick="alert('nothing here to see')">Sign Up</button>
+			</div>
+		</div>
+	</div>
 </body>
+</html>
